@@ -2,31 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f247370-d8fe-4e67-89c7-177638358ecf" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Deck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/IndexableClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Players.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/DiscardState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/DrawState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/FinishedState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/MeldState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/RummyState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/WaitingState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Step.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frankensteinsample.txt" beforeDir="false" afterPath="$PROJECT_DIR$/frankensteinsample.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/MyKeywordInContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/MyKeywordInContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Rummy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Rummy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/kz/edu/nu/cs/se/hw/TestKWIC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kz/edu/nu/cs/se/hw/TestKWIC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/kz/edu/nu/cs/se/hw/TestRummyCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kz/edu/nu/cs/se/hw/TestRummyCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/RummyState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/RummyState.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,13 +18,13 @@
     <favorites_list name="homework1" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.67570096">
+    <splitter split-orientation="horizontal" split-proportion="0.8588785">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="Rummy.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Rummy.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="202">
+                <state relative-caret-position="-1160">
                   <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -73,11 +51,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Players.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Players.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Players.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="246">
-                  <caret line="79" column="35" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
+                <state relative-caret-position="195">
+                  <caret line="78" column="61" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="61" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#1666#1667#0" expanded="true" />
@@ -94,14 +72,16 @@
           <file leaf-file-name="Card.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Card.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="267">
-                  <caret line="26" column="74" selection-start-line="26" selection-start-column="74" selection-end-line="26" selection-end-column="74" />
+                <state relative-caret-position="435">
+                  <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="35" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#417#418#0" expanded="true" />
                     <element signature="e#496#497#0" expanded="true" />
                     <element signature="e#527#528#0" expanded="true" />
                     <element signature="e#562#563#0" expanded="true" />
+                    <element signature="e#665#666#0" expanded="true" />
+                    <element signature="e#710#711#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -139,7 +119,7 @@
           <file leaf-file-name="FinishedState.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/FinishedState.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="349">
+                <state relative-caret-position="587">
                   <caret line="66" column="97" selection-start-line="66" selection-start-column="97" selection-end-line="66" selection-end-column="97" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -153,6 +133,18 @@
                     <element signature="e#1683#1684#0" expanded="true" />
                     <element signature="e#982#983#0" expanded="true" />
                     <element signature="e#1015#1016#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="RummyState.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/RummyState.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="357">
+                  <caret line="90" column="42" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -215,8 +207,8 @@
           <file leaf-file-name="TestRummyCode.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/kz/edu/nu/cs/se/hw/TestRummyCode.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="115">
-                  <caret line="561" selection-start-line="561" selection-end-line="561" />
+                <state relative-caret-position="215">
+                  <caret line="448" column="38" selection-start-line="448" selection-start-column="32" selection-end-line="448" selection-end-column="38" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -290,16 +282,16 @@
         <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/MyKeywordInContext.java" />
         <option value="$PROJECT_DIR$/src/test/java/kz/edu/nu/cs/se/hw/TestRummyStateCode.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Rummy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/RummyState.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/DrawState.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/FinishedState.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/DiscardState.java" />
-        <option value="$PROJECT_DIR$/src/test/java/kz/edu/nu/cs/se/hw/TestRummyCode.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/MeldState.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Deck.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/WaitingState.java" />
+        <option value="$PROJECT_DIR$/src/test/java/kz/edu/nu/cs/se/hw/TestRummyCode.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Card.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Players.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/RummyState.java" />
       </list>
     </option>
   </component>
@@ -323,7 +315,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="823" />
@@ -371,6 +363,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="hw" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="homework1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="homework-1-361" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hw" type="462c0819:PsiDirectoryNode" />
+              <item name="States" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="homework1" type="b2602c69:ProjectViewProjectNode" />
@@ -618,20 +619,11 @@
       <updated>1567485230049</updated>
       <workItem from="1567485234008" duration="1588000" />
       <workItem from="1567925485215" duration="23965000" />
-      <workItem from="1568114650111" duration="45517000" />
+      <workItem from="1568114650111" duration="50552000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestRummyCode - 2019.09.14 at 18h 38m 58s.xml">
-      <configuration name="TestRummyCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestRummyCode - 2019.09.14 at 18h 44m 05s.xml">
-      <configuration name="TestRummyCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestRummyCode - 2019.09.14 at 18h 44m 39s.xml">
-      <configuration name="TestRummyCode" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestRummyCode - 2019.09.14 at 18h 45m 45s.xml">
       <configuration name="TestRummyCode" configurationId="JUnit" />
     </history-entry>
@@ -653,9 +645,18 @@
     <history-entry file="TestRummyCode - 2019.09.15 at 12h 37m 51s.xml">
       <configuration name="TestRummyCode" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestRummyCode - 2019.09.15 at 12h 40m 27s.xml">
+      <configuration name="TestRummyCode" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestRummyCode - 2019.09.15 at 12h 42m 04s.xml">
+      <configuration name="TestRummyCode" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestRummyCode - 2019.09.15 at 12h 42m 47s.xml">
+      <configuration name="TestRummyCode" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71070000" />
+    <option name="totallyTimeSpent" value="76105000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -680,11 +681,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.3297568" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3292011" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41322315" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3030303" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989733" visible="true" weight="0.23462088" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989733" visible="true" weight="0.23462088" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.14738292" />
       <window_info id="Structure" order="1" sideWeight="0.5010267" side_tool="true" weight="0.25751072" />
@@ -999,26 +1000,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/FinishedState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="66" column="97" selection-start-line="66" selection-start-column="97" selection-end-line="66" selection-end-column="97" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
-            <element signature="e#1158#1159#0" expanded="true" />
-            <element signature="e#1586#1587#0" expanded="true" />
-            <element signature="e#1683#1684#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1015#1016#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/MeldState.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
@@ -1088,18 +1069,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Rummy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1798#1799#0" expanded="true" />
-            <element signature="e#1840#1841#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/WaitingState.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1112,22 +1081,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/RummyState.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/kz/edu/nu/cs/se/hw/TestRummyCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="747">
-          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+        <state relative-caret-position="215">
+          <caret line="448" column="38" selection-start-line="448" selection-start-column="32" selection-end-line="448" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#241#242#0" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#654#655#0" expanded="true" />
-            <element signature="e#855#856#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1097#1098#0" expanded="true" />
-            <element signature="e#976#977#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1148,32 +1107,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Card.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="26" column="74" selection-start-line="26" selection-start-column="74" selection-end-line="26" selection-end-column="74" />
+        <state relative-caret-position="435">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="35" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#417#418#0" expanded="true" />
             <element signature="e#496#497#0" expanded="true" />
             <element signature="e#527#528#0" expanded="true" />
             <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+            <element signature="e#710#711#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/kz/edu/nu/cs/se/hw/TestRummyCode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Rummy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="561" selection-start-line="561" selection-end-line="561" />
+        <state relative-caret-position="-1160">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1798#1799#0" expanded="true" />
+            <element signature="e#1840#1841#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Players.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="79" column="35" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
+        <state relative-caret-position="195">
+          <caret line="78" column="61" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1666#1667#0" expanded="true" />
@@ -1182,6 +1145,36 @@
             <element signature="e#1704#1705#0" expanded="true" />
             <element signature="e#2752#2753#0" expanded="true" />
             <element signature="e#2792#2793#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/FinishedState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="66" column="97" selection-start-line="66" selection-start-column="97" selection-end-line="66" selection-end-column="97" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
+            <element signature="e#916#917#0" expanded="true" />
+            <element signature="e#1013#1014#0" expanded="true" />
+            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="true" />
+            <element signature="e#1586#1587#0" expanded="true" />
+            <element signature="e#1683#1684#0" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
+            <element signature="e#1015#1016#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/RummyState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="90" column="42" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
