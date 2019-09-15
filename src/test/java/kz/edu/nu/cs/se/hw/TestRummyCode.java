@@ -560,7 +560,7 @@ public class TestRummyCode {
         rummy.declareRummy();
         rummy.meld("7C", "7D", "7H", "7S", "7M");
         rummy.meld("2C", "2D", "2H", "2S", "2M");
-        
+
         assertTrue("Game 4, turn 2, successful rummy", rummy.getCurrentStep() == Steps.FINISHED);
         assertTrue("Game 4, turn 2, melds", rummy.getNumMelds() == 3);
         assertTrue("Game 4, turn 2, finished", rummy.isFinished() == 1);

@@ -1,149 +1,188 @@
 package kz.edu.nu.cs.se.hw;
 
+import kz.edu.nu.cs.se.hw.States.*;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+
 /**
  * Starter code for a class that implements the <code>PlayableRummy</code>
  * interface. A constructor signature has been added, and method stubs have been
  * generated automatically in eclipse.
- * 
+ *
  * Before coding you should verify that you are able to run the accompanying
  * JUnit test suite <code>TestRummyCode</code>. Most of the unit tests will fail
  * initially.
- * 
+ *
  * @see PlayableRummy
  * @see TestRummyCode
  *
  */
 public class Rummy implements PlayableRummy {
+    String[] player_names;
+    public Deck deck;
+    public Players players;
+    public Stack<String> discard_pile;
+    public ArrayList<ArrayList<String>> melds;
+    public Step state;
 
     public Rummy(String... players) {
+        if(players.length > 6)
+            throw new RummyException("Players should be between 2 and 6", RummyException.EXPECTED_FEWER_PLAYERS);
+        else if(players.length <2)
+            throw new RummyException("Players should be between 2 and 6", RummyException.NOT_ENOUGH_PLAYERS);
+        this.player_names = players;
+        this.deck = new Deck();
+        this.players = new Players(players);
+        this.discard_pile = new Stack<>();
+        this.melds = new ArrayList<>();
+
+        this.state = new WaitingState(this);
     }
 
     @Override
     public String[] getPlayers() {
-        // TODO Auto-generated method stub
-        return null;
+        return player_names;
     }
 
     @Override
     public int getNumPlayers() {
-        // TODO Auto-generated method stub
-        return 0;
+        return player_names.length;
     }
 
     @Override
     public int getCurrentPlayer() {
-        // TODO Auto-generated method stub
-        return 0;
+        return this.players.currentPlayer;
     }
 
     @Override
     public int getNumCardsInDeck() {
-        // TODO Auto-generated method stub
-        return 0;
+        return deck.size();
     }
 
     @Override
     public int getNumCardsInDiscardPile() {
-        // TODO Auto-generated method stub
-        return 0;
+        return discard_pile.size();
     }
 
     @Override
     public String getTopCardOfDiscardPile() {
-        // TODO Auto-generated method stub
-        return null;
+        if(discard_pile.size() > 0)
+            return discard_pile.peek();
+        throw new RummyException("discard pile is empty", RummyException.NOT_VALID_DISCARD);
     }
 
     @Override
     public String[] getHandOfPlayer(int player) {
-        // TODO Auto-generated method stub
-        return null;
+        return this.players.getHandOfPlayer(player);
     }
 
     @Override
     public int getNumMelds() {
-        // TODO Auto-generated method stub
-        return 0;
+        return melds.size();
     }
 
     @Override
     public String[] getMeld(int i) {
-        // TODO Auto-generated method stub
-        return null;
+        if(i >= melds.size())
+            throw new RummyException("NOT_VALID_INDEX_OF_MELD", RummyException.NOT_VALID_INDEX_OF_MELD);
+        List<String> meld = melds.get(i);
+        return meld.toArray(new String[meld.size()]);
     }
 
     @Override
     public void rearrange(String card) {
-        // TODO Auto-generated method stub
-        
+        this.state.rearrange(card);
     }
 
     @Override
     public void shuffle(Long l) {
-        // TODO Auto-generated method stub
-        
+        this.state.shuffle(l);
+
     }
 
     @Override
     public Steps getCurrentStep() {
-        // TODO Auto-generated method stub
-        return null;
+        return this.state.getCurrentStep();
     }
 
     @Override
     public int isFinished() {
-        // TODO Auto-generated method stub
-        return 0;
+        return this.state.isFinished();
     }
 
     @Override
     public void initialDeal() {
-        // TODO Auto-generated method stub
-        
+        this.state.initialDeal();
     }
 
     @Override
     public void drawFromDiscard() {
-        // TODO Auto-generated method stub
-        
+        this.state.drawFromDiscard();
     }
 
     @Override
     public void drawFromDeck() {
-        // TODO Auto-generated method stub
-        
+        this.state.drawFromDeck();
     }
 
     @Override
     public void meld(String... cards) {
-        // TODO Auto-generated method stub
-        
+        this.state.meld(cards);
     }
 
     @Override
     public void addToMeld(int meldIndex, String... cards) {
-        // TODO Auto-generated method stub
-        
+        this.state.addToMeld(meldIndex, cards);
     }
 
     @Override
     public void declareRummy() {
-        // TODO Auto-generated method stub
-        
+        this.state.declareRummy();
     }
 
     @Override
     public void finishMeld() {
-        // TODO Auto-generated method stub
-        
+        this.state.finishMeld();
     }
 
     @Override
     public void discard(String card) {
-        // TODO Auto-generated method stub
-        
+        this.state.discard(card);
+//        if( this.player_cards.get(currentPlayer).remove(card) ) {
+//            this.discard_pile.push(card);
+//            this.state = new WaitingState(this);
+//
+//        } else
+//            throw new RummyException("Player does not have a such card", RummyException.NOT_VALID_CARD_DESCRIPTION);
     }
-    
-    
+
+
+    public void setState(Steps step) {
+        switch (step){
+            case WAITING:
+                this.state = new WaitingState(this);
+                break;
+            case DRAW:
+                this.state = new DrawState(this);
+                break;
+            case MELD:
+                this.state = new MeldState(this);
+                break;
+            case RUMMY:
+                this.state = new RummyState(this);
+                break;
+            case DISCARD:
+                this.state = new DiscardState(this);
+                break;
+            case FINISHED:
+                this.state = new FinishedState(this);
+                break;
+        }
+
+    }
+
+
 
 }

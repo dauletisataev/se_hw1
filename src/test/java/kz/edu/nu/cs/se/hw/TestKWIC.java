@@ -11,9 +11,10 @@ public class TestKWIC {
     
     @Before
     public void setUp() {
-        kwic = new MyKeywordInContext("frankensteinsample", "frankensteinsample.txt");
+        kwic = new MyKeywordInContext("dauletsample", "frankensteinsample.txt");
         kwic.txt2html();
         kwic.indexLines();
+        kwic.writeIndexToFile();
     }
     
     @Test
