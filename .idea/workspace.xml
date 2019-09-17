@@ -3,8 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="0f247370-d8fe-4e67-89c7-177638358ecf" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Rummy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Rummy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/DiscardState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/DiscardState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/DrawState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/DrawState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/FinishedState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/FinishedState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/MeldState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/MeldState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/RummyState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/RummyState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/WaitingState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/WaitingState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Step.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Step.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/kz/edu/nu/cs/se/hw/TestRummyCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kz/edu/nu/cs/se/hw/TestRummyCode.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,18 +25,20 @@
     <favorites_list name="homework1" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.8588785">
+    <splitter split-orientation="horizontal" split-proportion="0.5130662">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="Rummy.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Rummy.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1160">
-                  <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+                <state relative-caret-position="255">
+                  <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#1798#1799#0" expanded="true" />
                     <element signature="e#1840#1841#0" expanded="true" />
+                    <element signature="e#3668#3669#0" expanded="true" />
+                    <element signature="e#3708#3709#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -38,138 +47,66 @@
           <file leaf-file-name="Deck.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Deck.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
+                <state relative-caret-position="435">
+                  <caret line="37" column="20" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="20" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#671#672#0" expanded="true" />
                     <element signature="e#731#732#0" expanded="true" />
-                    <element signature="e#684#685#0" expanded="true" />
-                    <element signature="e#718#719#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Players.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Players.java">
+          <file leaf-file-name="Steps.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Steps.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="78" column="61" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="61" />
+                <state relative-caret-position="45">
+                  <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Step.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Step.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="169">
+                  <caret line="37" column="48" lean-forward="true" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
+                  <folding>
+                    <element signature="e#366#367#0" expanded="true" />
+                    <element signature="e#391#392#0" expanded="true" />
+                    <element signature="e#581#582#0" expanded="true" />
+                    <element signature="e#678#679#0" expanded="true" />
+                    <element signature="e#700#701#0" expanded="true" />
+                    <element signature="e#797#798#0" expanded="true" />
+                    <element signature="e#1057#1058#0" expanded="true" />
+                    <element signature="e#1154#1155#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="WaitingState.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/WaitingState.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="329">
+                  <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#1666#1667#0" expanded="true" />
-                    <element signature="e#1728#1729#0" expanded="true" />
-                    <element signature="e#1621#1622#0" expanded="true" />
-                    <element signature="e#1704#1705#0" expanded="true" />
-                    <element signature="e#2752#2753#0" expanded="true" />
-                    <element signature="e#2792#2793#0" expanded="true" />
+                    <element signature="e#454#455#0" expanded="true" />
+                    <element signature="e#495#496#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Card.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Card.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="435">
-                  <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="35" selection-end-column="5" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#417#418#0" expanded="true" />
-                    <element signature="e#496#497#0" expanded="true" />
-                    <element signature="e#527#528#0" expanded="true" />
-                    <element signature="e#562#563#0" expanded="true" />
-                    <element signature="e#665#666#0" expanded="true" />
-                    <element signature="e#710#711#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MyKeywordInContext.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/MyKeywordInContext.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1658">
-                  <caret line="117" column="38" lean-forward="true" selection-start-line="117" selection-start-column="38" selection-end-line="117" selection-end-column="38" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="TestKWIC.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/kz/edu/nu/cs/se/hw/TestKWIC.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-176">
-                  <caret line="16" column="29" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="29" />
-                  <folding>
-                    <element signature="e#429#430#0" expanded="true" />
-                    <element signature="e#505#506#0" expanded="true" />
-                    <element signature="e#547#548#0" expanded="true" />
-                    <element signature="e#625#626#0" expanded="true" />
-                    <element signature="e#667#668#0" expanded="true" />
-                    <element signature="e#763#764#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FinishedState.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/FinishedState.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="587">
-                  <caret line="66" column="97" selection-start-line="66" selection-start-column="97" selection-end-line="66" selection-end-column="97" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#427#428#0" expanded="true" />
-                    <element signature="e#460#461#0" expanded="true" />
-                    <element signature="e#916#917#0" expanded="true" />
-                    <element signature="e#1013#1014#0" expanded="true" />
-                    <element signature="e#1061#1062#0" expanded="true" />
-                    <element signature="e#1158#1159#0" expanded="true" />
-                    <element signature="e#1586#1587#0" expanded="true" />
-                    <element signature="e#1683#1684#0" expanded="true" />
-                    <element signature="e#982#983#0" expanded="true" />
-                    <element signature="e#1015#1016#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RummyState.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="RummyState.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/RummyState.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="90" column="42" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
+                <state relative-caret-position="985">
+                  <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MeldState.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/MeldState.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="321">
-                  <caret line="79" column="30" lean-forward="true" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#160#161#0" expanded="true" />
-                    <element signature="e#192#193#0" expanded="true" />
-                    <element signature="e#615#616#0" expanded="true" />
-                    <element signature="e#640#641#0" expanded="true" />
-                    <element signature="e#879#880#0" expanded="true" />
-                    <element signature="e#976#977#0" expanded="true" />
-                    <element signature="e#1024#1025#0" expanded="true" />
-                    <element signature="e#1121#1122#0" expanded="true" />
-                    <element signature="e#2586#2587#0" expanded="true" />
-                    <element signature="e#2605#2606#0" expanded="true" />
-                    <element signature="e#1954#1955#0" expanded="true" />
-                    <element signature="e#982#983#0" expanded="true" />
-                    <element signature="e#1009#1010#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -178,28 +115,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file leaf-file-name="DiscardState.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/DiscardState.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1125">
-                  <caret line="81" column="9" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#911#912#0" expanded="true" />
-                    <element signature="e#1008#1009#0" expanded="true" />
-                    <element signature="e#1581#1582#0" expanded="true" />
-                    <element signature="e#1678#1679#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="PlayableRummy.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/PlayableRummy.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-2553">
-                  <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+                <state relative-caret-position="60">
+                  <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
                 </state>
               </provider>
             </entry>
@@ -207,8 +128,8 @@
           <file leaf-file-name="TestRummyCode.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/kz/edu/nu/cs/se/hw/TestRummyCode.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="215">
-                  <caret line="448" column="38" selection-start-line="448" selection-start-column="32" selection-end-line="448" selection-end-column="38" />
+                <state relative-caret-position="185">
+                  <caret line="329" selection-start-line="329" selection-end-line="329" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -229,9 +150,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>rearr</find>
-      <find>getnu</find>
-      <find>getNumPlayers</find>
       <find>PLAYERS</find>
       <find>initial</find>
       <find>meld</find>
@@ -259,6 +177,9 @@
       <find>declare</find>
       <find>System</find>
       <find>finish</find>
+      <find>QH</find>
+      <find>test_re</find>
+      <find>EXPECTED_WAITING_STEP</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -277,21 +198,21 @@
         <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/Finished.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/PlayableRummy.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/Waiting.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Step.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Cards/DiscardPile.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/MyKeywordInContext.java" />
         <option value="$PROJECT_DIR$/src/test/java/kz/edu/nu/cs/se/hw/TestRummyStateCode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Rummy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/DrawState.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/FinishedState.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/DiscardState.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/MeldState.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Deck.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/WaitingState.java" />
-        <option value="$PROJECT_DIR$/src/test/java/kz/edu/nu/cs/se/hw/TestRummyCode.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Card.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Players.java" />
+        <option value="$PROJECT_DIR$/src/test/java/kz/edu/nu/cs/se/hw/TestRummyCode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Rummy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/FinishedState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/MeldState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/DrawState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/DiscardState.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/RummyState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/WaitingState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Step.java" />
       </list>
     </option>
   </component>
@@ -328,9 +249,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -403,6 +323,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -480,29 +401,6 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="TestRummyCode.test_discard_rule" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="homework1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="kz.edu.nu.cs.se.hw.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="kz.edu.nu.cs.se.hw" />
-      <option name="MAIN_CLASS_NAME" value="kz.edu.nu.cs.se.hw.TestRummyCode" />
-      <option name="METHOD_NAME" value="test_discard_rule" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
     <configuration name="TestRummyStateCode" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="homework1" />
       <extension name="coverage">
@@ -528,6 +426,29 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="TestKWIC" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="homework1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kz.edu.nu.cs.se.hw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="kz.edu.nu.cs.se.hw" />
+      <option name="MAIN_CLASS_NAME" value="kz.edu.nu.cs.se.hw.TestKWIC" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="TestRummyCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="homework1" />
@@ -593,17 +514,17 @@
     <list>
       <item itemvalue="Android JUnit.TestRummyStateCode" />
       <item itemvalue="JUnit.TestRummyCode" />
-      <item itemvalue="Android JUnit.TestRummyCode.test_discard_rule" />
       <item itemvalue="Android JUnit.TestRummyCode.game_4" />
       <item itemvalue="Android JUnit.TestRummyCode.game_2" />
+      <item itemvalue="JUnit.TestKWIC" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TestRummyCode" />
+        <item itemvalue="JUnit.TestKWIC" />
         <item itemvalue="Android JUnit.TestRummyCode.game_2" />
         <item itemvalue="Android JUnit.TestRummyStateCode" />
         <item itemvalue="Android JUnit.TestRummyCode.game_4" />
-        <item itemvalue="Android JUnit.TestRummyCode.test_discard_rule" />
       </list>
     </recent_temporary>
   </component>
@@ -619,44 +540,45 @@
       <updated>1567485230049</updated>
       <workItem from="1567485234008" duration="1588000" />
       <workItem from="1567925485215" duration="23965000" />
-      <workItem from="1568114650111" duration="50552000" />
+      <workItem from="1568114650111" duration="55314000" />
+      <workItem from="1568719551142" duration="1013000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestRummyCode - 2019.09.14 at 18h 45m 45s.xml">
+    <history-entry file="TestRummyCode - 2019.09.15 at 18h 09m 38s.xml">
       <configuration name="TestRummyCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRummyCode - 2019.09.14 at 18h 46m 40s.xml">
+    <history-entry file="TestRummyCode - 2019.09.15 at 18h 09m 40s.xml">
       <configuration name="TestRummyCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRummyCode - 2019.09.15 at 12h 29m 33s.xml">
+    <history-entry file="TestRummyCode - 2019.09.15 at 18h 41m 15s.xml">
       <configuration name="TestRummyCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRummyCode - 2019.09.15 at 12h 35m 17s.xml">
+    <history-entry file="TestRummyCode - 2019.09.15 at 18h 41m 50s.xml">
       <configuration name="TestRummyCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRummyCode - 2019.09.15 at 12h 36m 51s.xml">
+    <history-entry file="TestRummyCode - 2019.09.15 at 18h 42m 39s.xml">
       <configuration name="TestRummyCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRummyCode - 2019.09.15 at 12h 36m 57s.xml">
+    <history-entry file="TestRummyCode - 2019.09.15 at 20h 53m 37s.xml">
       <configuration name="TestRummyCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRummyCode - 2019.09.15 at 12h 37m 51s.xml">
+    <history-entry file="TestKWIC - 2019.09.15 at 20h 53m 51s.xml">
+      <configuration name="TestKWIC" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestKWIC - 2019.09.17 at 17h 31m 54s.xml">
+      <configuration name="TestKWIC" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestRummyCode - 2019.09.17 at 17h 32m 03s.xml">
       <configuration name="TestRummyCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRummyCode - 2019.09.15 at 12h 40m 27s.xml">
-      <configuration name="TestRummyCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestRummyCode - 2019.09.15 at 12h 42m 04s.xml">
-      <configuration name="TestRummyCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestRummyCode - 2019.09.15 at 12h 42m 47s.xml">
+    <history-entry file="TestRummyCode - 2019.09.17 at 17h 46m 50s.xml">
       <configuration name="TestRummyCode" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76105000" />
+    <option name="totallyTimeSpent" value="81880000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -681,13 +603,12 @@
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.3297568" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3292011" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35261708" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3030303" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989733" visible="true" weight="0.23462088" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989733" visible="true" weight="0.1788269" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.14738292" />
       <window_info id="Structure" order="1" sideWeight="0.5010267" side_tool="true" weight="0.25751072" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -699,6 +620,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.14738292" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -739,14 +661,33 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/PlayableRummy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/kz/edu/nu/cs/se/hw/TestRummyCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2070">
+          <caret line="143" column="14" selection-start-line="143" selection-start-column="8" selection-end-line="143" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Rummy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2535">
           <caret line="182" column="46" lean-forward="true" selection-start-line="182" selection-start-column="46" selection-end-line="182" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2735#2736#0" expanded="true" />
-            <element signature="e#2768#2769#0" expanded="true" />
+            <element signature="e#1798#1799#0" expanded="true" />
+            <element signature="e#1840#1841#0" expanded="true" />
+            <element signature="e#3668#3669#0" expanded="true" />
+            <element signature="e#3708#3709#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -771,8 +712,8 @@
           <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#684#685#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -798,9 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -817,8 +755,10 @@
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2735#2736#0" expanded="true" />
-            <element signature="e#2768#2769#0" expanded="true" />
+            <element signature="e#1798#1799#0" expanded="true" />
+            <element signature="e#1840#1841#0" expanded="true" />
+            <element signature="e#3668#3669#0" expanded="true" />
+            <element signature="e#3708#3709#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -848,9 +788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1215">
           <caret line="81" column="94" lean-forward="true" selection-start-line="81" selection-start-column="44" selection-end-line="81" selection-end-column="94" />
-          <folding>
-            <element signature="e#68#109#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -911,9 +848,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="27" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="27" />
-          <folding>
-            <element signature="e#68#109#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -935,17 +869,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Steps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -970,94 +893,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Cards/DiscardPile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding>
-            <element signature="e#162#163#0" expanded="true" />
-            <element signature="e#194#195#0" expanded="true" />
-            <element signature="e#226#227#0" expanded="true" />
-            <element signature="e#258#259#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Step.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="14" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/DrawState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/MeldState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="79" column="30" lean-forward="true" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#160#161#0" expanded="true" />
-            <element signature="e#192#193#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#879#880#0" expanded="true" />
-            <element signature="e#976#977#0" expanded="true" />
-            <element signature="e#1024#1025#0" expanded="true" />
-            <element signature="e#1121#1122#0" expanded="true" />
-            <element signature="e#2586#2587#0" expanded="true" />
-            <element signature="e#2605#2606#0" expanded="true" />
-            <element signature="e#1954#1955#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1009#1010#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/DiscardState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="81" column="9" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#911#912#0" expanded="true" />
-            <element signature="e#1008#1009#0" expanded="true" />
-            <element signature="e#1581#1582#0" expanded="true" />
-            <element signature="e#1678#1679#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/PlayableRummy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2553">
-          <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Cards/DiscardPile.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/MyKeywordInContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1658">
-          <caret line="117" column="38" lean-forward="true" selection-start-line="117" selection-start-column="38" selection-end-line="117" selection-end-column="38" />
+        <state relative-caret-position="-40">
+          <caret line="87" column="11" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Card.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#613#614#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+            <element signature="e#710#711#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Deck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="37" column="20" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Players.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="61" column="32" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/kz.edu.nu.cs.se.hw.TestKWIC">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>kz.edu.nu.cs.se.hw.TestKWIC</OriginalElement>
+          <nodes>
+            <node x="-16.0" y="-116.0">kz.edu.nu.cs.se.hw.TestKWIC</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-13.0" y="-80.0" />
+          <SelectedNodes>
+            <node>kz.edu.nu.cs.se.hw.TestKWIC</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/java.lang.Override">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>java.lang.Override</OriginalElement>
+          <nodes>
+            <node x="" y="">java.lang.Override</node>
+            <node x="" y="">java.lang.annotation.Annotation</node>
+            <node x="" y="">java.lang.annotation.Target</node>
+            <node x="" y="">java.lang.annotation.Retention</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="77.0" y="135.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Rummy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1798#1799#0" expanded="true" />
+            <element signature="e#1840#1841#0" expanded="true" />
+            <element signature="e#3668#3669#0" expanded="true" />
+            <element signature="e#3708#3709#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/kz.edu.nu.cs.se.hw.Rummy">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>kz.edu.nu.cs.se.hw.Rummy</OriginalElement>
+          <nodes>
+            <node x="25.0" y="80.0">kz.edu.nu.cs.se.hw.Rummy</node>
+            <node x="0.0" y="0.0">kz.edu.nu.cs.se.hw.PlayableRummy</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="kz.edu.nu.cs.se.hw.Rummy" target="kz.edu.nu.cs.se.hw.PlayableRummy">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="4.0" y="-40.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/kz/edu/nu/cs/se/hw/TestKWIC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-176">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="29" />
+        <state relative-caret-position="148">
+          <caret line="13" column="80" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="80" />
           <folding>
             <element signature="e#429#430#0" expanded="true" />
             <element signature="e#505#506#0" expanded="true" />
@@ -1069,10 +1031,88 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Steps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/FinishedState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/MeldState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2137#2138#0" expanded="true" />
+            <element signature="e#2186#2187#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/DrawState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/DiscardState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/PlayableRummy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/kz/edu/nu/cs/se/hw/TestRummyCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="329" selection-start-line="329" selection-end-line="329" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/RummyState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="985">
+          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/WaitingState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="30" column="31" lean-forward="true" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+        <state relative-caret-position="329">
+          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#454#455#0" expanded="true" />
@@ -1081,100 +1121,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/kz/edu/nu/cs/se/hw/TestRummyCode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Step.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="448" column="38" selection-start-line="448" selection-start-column="32" selection-end-line="448" selection-end-column="38" />
+        <state relative-caret-position="169">
+          <caret line="37" column="48" lean-forward="true" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Deck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#684#685#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Card.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="35" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#665#666#0" expanded="true" />
-            <element signature="e#710#711#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Rummy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1160">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1798#1799#0" expanded="true" />
-            <element signature="e#1840#1841#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/Players.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="78" column="61" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1666#1667#0" expanded="true" />
-            <element signature="e#1728#1729#0" expanded="true" />
-            <element signature="e#1621#1622#0" expanded="true" />
-            <element signature="e#1704#1705#0" expanded="true" />
-            <element signature="e#2752#2753#0" expanded="true" />
-            <element signature="e#2792#2793#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/FinishedState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="66" column="97" selection-start-line="66" selection-start-column="97" selection-end-line="66" selection-end-column="97" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
-            <element signature="e#1158#1159#0" expanded="true" />
-            <element signature="e#1586#1587#0" expanded="true" />
-            <element signature="e#1683#1684#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1015#1016#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/edu/nu/cs/se/hw/States/RummyState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="90" column="42" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#391#392#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#678#679#0" expanded="true" />
+            <element signature="e#700#701#0" expanded="true" />
+            <element signature="e#797#798#0" expanded="true" />
+            <element signature="e#1057#1058#0" expanded="true" />
+            <element signature="e#1154#1155#0" expanded="true" />
           </folding>
         </state>
       </provider>

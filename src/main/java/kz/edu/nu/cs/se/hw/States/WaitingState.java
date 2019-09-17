@@ -47,41 +47,6 @@ public class WaitingState extends Step {
     }
 
     @Override
-    public void drawFromDiscard() {
-        throw new RummyException("invalid state", RummyException.EXPECTED_DRAW_STEP);
-    }
-
-    @Override
-    public void drawFromDeck() {
-        throw new RummyException("invalid state", RummyException.EXPECTED_DRAW_STEP);
-    }
-
-    @Override
-    public void meld(String... cards) {
-        throw new RummyException("invalid state", RummyException.EXPECTED_MELD_STEP_OR_RUMMY_STEP);
-    }
-
-    @Override
-    public void addToMeld(int meldIndex, String... cards) {
-        throw new RummyException("invalid state", RummyException.EXPECTED_MELD_STEP_OR_RUMMY_STEP);
-    }
-
-    @Override
-    public void declareRummy() {
-        throw new RummyException("invalid state", RummyException.EXPECTED_MELD_STEP);
-    }
-
-    @Override
-    public void finishMeld() {
-        throw new RummyException("invalid state", RummyException.EXPECTED_MELD_STEP_OR_RUMMY_STEP);
-    }
-
-    @Override
-    public void discard(String card) {
-        throw new RummyException("invalid state", RummyException.EXPECTED_DISCARD_STEP);
-    }
-
-    @Override
     public Steps getCurrentStep() {
         return Steps.WAITING;
     }

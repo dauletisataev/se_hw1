@@ -440,9 +440,14 @@ public class TestRummyCode {
         
         // turn 1
         rummy.drawFromDeck();
+        System.out.println("cards before meld = " + Arrays.toString(rummy.getHandOfPlayer(rummy.getCurrentPlayer())));
         rummy.meld("AD", "AH", "AS", "AC", "AM");
         rummy.meld("6D", "6H", "6S", "6C", "6M");
+        System.out.println("cards before meld = " + Arrays.toString(rummy.getHandOfPlayer(rummy.getCurrentPlayer())));
+
+        System.out.println(rummy.getCurrentStep());
         rummy.finishMeld();
+
         rummy.discard("4S");
 
         assertTrue("Game 2, turn 1, melds", rummy.getNumMelds() == 2);

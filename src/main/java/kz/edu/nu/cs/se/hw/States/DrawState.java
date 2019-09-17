@@ -13,26 +13,6 @@ public class DrawState extends Step {
     }
 
     @Override
-    public void rearrange(String card) {
-        throw new RummyException("EXPECTED_WAITING_STEP", RummyException.EXPECTED_WAITING_STEP);
-    }
-
-    @Override
-    public void shuffle(Long l) {
-        throw new RummyException("EXPECTED_WAITING_STEP", RummyException.EXPECTED_WAITING_STEP);
-    }
-
-    @Override
-    public int isFinished() {
-        return -1;
-    }
-
-    @Override
-    public void initialDeal() {
-        throw new RummyException("EXPECTED_WAITING_STEP", RummyException.EXPECTED_WAITING_STEP);
-    }
-
-    @Override
     public void drawFromDiscard() {
         this.game.players.addToHandOfCurrentPlayer(this.game.discard_pile.pop(), true);
         this.game.setState(Steps.MELD);
@@ -52,31 +32,6 @@ public class DrawState extends Step {
         this.game.players.addToHandOfCurrentPlayer(drawnCardFromDeck, false);
 
         this.game.setState(Steps.MELD);
-    }
-
-    @Override
-    public void meld(String... cards) {
-        throw new RummyException("EXPECTED_MELD_STEP_OR_RUMMY_STEP", RummyException.EXPECTED_MELD_STEP_OR_RUMMY_STEP);
-    }
-
-    @Override
-    public void addToMeld(int meldIndex, String... cards) {
-        throw new RummyException("EXPECTED_MELD_STEP_OR_RUMMY_STEP", RummyException.EXPECTED_MELD_STEP_OR_RUMMY_STEP);
-    }
-
-    @Override
-    public void declareRummy() {
-        throw new RummyException("EXPECTED_RUMMY_STEP", RummyException.EXPECTED_RUMMY_STEP);
-    }
-
-    @Override
-    public void finishMeld() {
-        throw new RummyException("EXPECTED_MELD_STEP_OR_RUMMY_STEP", RummyException.EXPECTED_MELD_STEP_OR_RUMMY_STEP);
-    }
-
-    @Override
-    public void discard(String card) {
-        throw new RummyException("EXPECTED_DISCARD_STEP", RummyException.EXPECTED_DISCARD_STEP);
     }
 
     @Override

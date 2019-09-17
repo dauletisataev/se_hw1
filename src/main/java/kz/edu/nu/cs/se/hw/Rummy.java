@@ -150,12 +150,6 @@ public class Rummy implements PlayableRummy {
     @Override
     public void discard(String card) {
         this.state.discard(card);
-//        if( this.player_cards.get(currentPlayer).remove(card) ) {
-//            this.discard_pile.push(card);
-//            this.state = new WaitingState(this);
-//
-//        } else
-//            throw new RummyException("Player does not have a such card", RummyException.NOT_VALID_CARD_DESCRIPTION);
     }
 
 
