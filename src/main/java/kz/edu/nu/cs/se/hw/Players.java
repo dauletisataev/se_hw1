@@ -9,6 +9,7 @@ public class Players {
     public ArrayList<ArrayList<String>> cards;
     public int currentPlayer;
     public boolean lastCardDrawnFromDiscard = false;
+    public boolean currentPlayerCanDeclareRummy = true;
     public String[] names;
 
     public Players(String... players) {
@@ -63,15 +64,16 @@ public class Players {
         currentPlayer = currentPlayer == names.length-1 ? 0 : currentPlayer+1;
     }
 
-    public boolean checkCardsForValidMeld(String... cards) {
+    public boolean checkCardsForValidMeld(String[] cards, Boolean checkHandOfPlayer) {
         if(cards.length < 3)
             throw new RummyException("not enough cards to form MELD", RummyException.EXPECTED_CARDS);
 
         boolean sameSuit = true;
         boolean sameRank = true;
 
-        if(!currentPlayerHasCard(cards[0]))
-               throw new RummyException("cards can not form MELD", RummyException.EXPECTED_CARDS);
+        if(checkHandOfPlayer)
+            if(!currentPlayerHasCard(cards[0]))
+                   throw new RummyException("cards can not form MELD", RummyException.EXPECTED_CARDS);
 
         Arrays.sort(cards, new Comparator<String>() {
             @Override
@@ -81,8 +83,9 @@ public class Players {
         });
 
         for(int i=1; i<cards.length; i++){
-            if(!currentPlayerHasCard(cards[i]))
-                throw new RummyException("cards can not form MELD", RummyException.EXPECTED_CARDS);
+            if(checkHandOfPlayer)
+                if(!currentPlayerHasCard(cards[i]))
+                    throw new RummyException("cards can not form MELD", RummyException.EXPECTED_CARDS);
 
             Card firstCard = new Card(cards[i-1]);
             Card secondCard = new Card(cards[i]);
@@ -109,4 +112,22 @@ public class Players {
         return true;
     }
 
+    public void checkCardCanBeAddedToMeld(List<String> meld, String card) {
+        Card cardToAdd = new Card(card);
+        Card bottomCard = new Card(meld.get(meld.size()-1));
+        Card topCard = new Card(meld.get(0));
+
+        if( bottomCard.suit == topCard.suit) { // this means the current sequence is kind of same suit
+            if(cardToAdd.suit != bottomCard.suit)
+                throw new RummyException("the given card can not be added to a given meld", RummyException.NOT_VALID_MELD);
+            if(cardToAdd.rank-topCard.rank != 1 && bottomCard.rank-cardToAdd.rank != 1)
+                throw new RummyException("the given card can not be added to a given meld", RummyException.NOT_VALID_MELD);
+        }
+        else if(bottomCard.rank == topCard.rank) {
+            if(bottomCard.rank  != topCard.rank)
+                throw new RummyException("the given card can not be added to a given meld", RummyException.NOT_VALID_MELD);
+        }
+
+        throw new RummyException("meld is already invalid", RummyException.NOT_VALID_MELD);
+    }
 }

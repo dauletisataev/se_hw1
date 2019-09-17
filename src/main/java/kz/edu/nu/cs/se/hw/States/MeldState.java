@@ -8,6 +8,7 @@ import kz.edu.nu.cs.se.hw.Steps;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.List;
 
 public class MeldState extends Step {
     Rummy game;
@@ -18,7 +19,7 @@ public class MeldState extends Step {
 
     @Override
     public void meld(String... cards) {
-        this.game.players.checkCardsForValidMeld(cards);
+        this.game.players.checkCardsForValidMeld(cards, true);
 
         for(String card: cards){
             this.game.players.drawFromCurrentPlayer(card);
@@ -28,10 +29,17 @@ public class MeldState extends Step {
 
         if(this.game.players.getHandOfCurrentPlayer().length == 0)
             this.game.setState(Steps.FINISHED);
+
+        this.game.players.currentPlayerCanDeclareRummy = false;
     }
 
     @Override
     public void addToMeld(int meldIndex, String... cards) {
+        List<String> currentMeld = new ArrayList<>(this.game.melds.get(meldIndex));
+        currentMeld.addAll(new ArrayList<>(Arrays.asList(cards)));
+
+        this.game.players.checkCardsForValidMeld(currentMeld.toArray(new String[currentMeld.size()]), false);
+
         for(String card: cards) {
             this.game.players.drawFromCurrentPlayer(card);
         }
@@ -39,10 +47,14 @@ public class MeldState extends Step {
 
         if(this.game.players.getHandOfCurrentPlayer().length == 0)
             this.game.setState(Steps.FINISHED);
+
+        this.game.players.currentPlayerCanDeclareRummy = false;
     }
 
     @Override
     public void declareRummy() {
+        if(!this.game.players.currentPlayerCanDeclareRummy)
+            throw new RummyException("can not declare rummy", RummyException.EXPECTED_MELD_STEP);
         this.game.setState(Steps.RUMMY);
     }
 

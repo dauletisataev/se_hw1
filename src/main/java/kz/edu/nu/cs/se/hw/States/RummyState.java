@@ -5,6 +5,7 @@ import kz.edu.nu.cs.se.hw.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.List;
 
 public class RummyState extends Step {
     Rummy game;
@@ -15,7 +16,7 @@ public class RummyState extends Step {
 
     @Override
     public void meld(String... cards) {
-        this.game.players.checkCardsForValidMeld(cards);
+        this.game.players.checkCardsForValidMeld(cards, true);
 
         for(String card: cards){
             this.game.players.drawFromCurrentPlayer(card);
@@ -30,8 +31,10 @@ public class RummyState extends Step {
 
     @Override
     public void addToMeld(int meldIndex, String... cards) {
-        for(String card: cards)
-            canCardBeAddedToMeld(meldIndex, card);
+        List<String> currentMeld = new ArrayList<>(this.game.melds.get(meldIndex));
+        currentMeld.addAll(new ArrayList<>(Arrays.asList(cards)));
+
+        this.game.players.checkCardsForValidMeld(currentMeld.toArray(new String[currentMeld.size()]), false);
 
         for(String card: cards) {
             this.game.players.drawFromCurrentPlayer(card);
@@ -40,26 +43,6 @@ public class RummyState extends Step {
         this.game.melds.get(meldIndex).addAll(new ArrayList<>(Arrays.asList(cards)));
         if(this.game.players.getHandOfCurrentPlayer().length == 0 || this.game.players.getHandOfCurrentPlayer().length == 1)
             this.game.setState(Steps.FINISHED);
-    }
-
-    void canCardBeAddedToMeld(int meldIndex, String card) {
-        Card cardToAdd = new Card(card);
-        Card bottomCard = new Card(this.game.melds.get(meldIndex).get(this.game.melds.get(meldIndex).size()-1));
-        Card topCard = new Card(this.game.melds.get(meldIndex).get(0));
-
-        if( bottomCard.suit == topCard.suit) { // this means the current sequence is kind of same suit
-            if(cardToAdd.suit != bottomCard.suit)
-                throw new RummyException("the given card can not be added to a given meld", RummyException.NOT_VALID_MELD);
-            if(cardToAdd.rank-topCard.rank != 1 && bottomCard.rank-cardToAdd.rank != 1)
-                throw new RummyException("the given card can not be added to a given meld", RummyException.NOT_VALID_MELD);
-        }
-        else if(bottomCard.rank == topCard.rank) {
-            if(bottomCard.rank  != topCard.rank)
-                throw new RummyException("the given card can not be added to a given meld", RummyException.NOT_VALID_MELD);
-        }
-
-        throw new RummyException("meld is already invalid", RummyException.NOT_VALID_MELD);
-
     }
 
     @Override
